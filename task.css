@@ -57,6 +57,21 @@
     text-decoration: none;
     color: black;
 }
+.logoslide{
+    white-space: nowrap;
+    /* display: inline-block; */
+    animation: slide 15s linear infinite;
+    margin: 20px;
+    overflow: hidden;
+}
+ @keyframes slide{
+0%{
+    transform: translateX(0);
+}
+100%{
+    transform: translateX(-100%);
+}
+} 
 /* =====================imageslider============================ */
 .imgslider{
     width: 100%;
