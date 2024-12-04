@@ -1,0 +1,624 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+#navbar{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: aqua; */
+    align-items: center;
+    /* position: absolute;  */
+     /* position: fixed; */
+     margin-right:10px;
+     position: fixed ;
+     background-color: white;
+    
+    
+
+}
+#navbar img{
+    width: 100px;
+    margin-left: 30px;
+
+}
+#navbar nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+
+}
+
+#navbar nav ul li a{
+    text-decoration: none;
+    
+
+}
+#navbar nav ul li a{
+    color: black;
+}
+#navbar nav ul li a:hover{
+    color: rgb(233, 4, 4);
+}
+#nav{
+    display: flex;
+    gap: 20px;
+    margin-right: 5px;
+}
+#nav li{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  
+}
+
+#nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+/* =====================imageslider============================ */
+.imgslider{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    background-image: url(https://www.perfumelounge.in/cdn/shop/files/webbanner1_a71fe45b-f049-4c25-984f-eab56a45acd0.jpg?v=1727775905&width=1800);
+    background-size: cover;
+    animation: changeimage 10s linear infinite;
+}
+@keyframes changeimage{
+    0%{
+        background-image: url(https://www.perfumelounge.in/cdn/shop/files/The_Glamour_Collection_1.jpg?v=1730707829&width=1800);
+    }
+    25%{
+        background-image: url(https://www.perfumelounge.in/cdn/shop/files/webbanner1_a71fe45b-f049-4c25-984f-eab56a45acd0.jpg?v=1727775905&width=1800);
+    }
+    50%{
+        background-image: url(https://www.perfumelounge.in/cdn/shop/files/webbanner1_a71fe45b-f049-4c25-984f-eab56a45acd0.jpg?v=1727775905&width=1800);
+    }
+    75%{
+        background-image: url(https://www.perfumelounge.in/cdn/shop/files/Website_Banner_8.jpg?v=1726821941&width=1800);
+    }
+    100%{
+        background-image: url(https://www.perfumelounge.in/cdn/shop/files/webbanner1_a71fe45b-f049-4c25-984f-eab56a45acd0.jpg?v=1727775905&width=1800);
+    }
+    
+
+}
+/* ==========fontline======================== */
+.fontline{
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    margin-top: 60px;
+    height: 80px;
+
+
+}
+
+.fontline h{
+   
+    font-size: 40px;
+}
+/* ================hero=============================== */
+.hero{
+    /* width: 100%; */
+    overflow: hidden;
+    display:grid ;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: space-between;
+    align-items:center ;
+}
+.hero article div img{
+    margin: 40px;
+    padding: 10px;
+}
+.hero article div img{
+     width: 250px;
+    height:300px
+
+}
+.hero article div img:hover{
+    scale: 1.2;
+    transition: 0.2s;
+    background-image: url(https://www.perfumelounge.in/cdn/shop/files/2_11_1_1.jpg?v=1725266665&width=700);
+} 
+.hero article div{   
+font-size: 3opx;
+text-align: center;
+padding-inline: 10px;
+}
+/* ===================cart==================== */
+.cart{
+    color: white;
+    border: 1px solid red;
+    background-color: rgb(204, 20, 20);
+}
+/* ================view============== */
+.view{
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    margin-top: 60px;
+    height: 80px;
+    font-size: 30px;
+    color: white;
+
+}
+.view button:hover{
+    color: red;
+    /* background-color: white; */
+}
+.view button{
+    padding: 10px;
+    color: white;
+    background-color: black;
+
+}
+/* .view article div{
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+    margin: 5px;
+    padding: 10px;
+} */
+.hero1{
+    /* width: 100%; */
+    overflow: hidden;
+    display:grid ;
+    grid-template-columns: auto auto auto ;
+    justify-content: space-between;
+    align-items:center ;
+}
+.hero1 article div img{
+    margin: 20px;
+    padding: 10px;
+}
+.hero1 article div img{
+     width: 400px;
+    height:500px;
+    transition: 10s;
+}
+.hero1 article div img:hover{
+    scale: 1.2;
+   
+}
+.hero1 article div{   
+font-size: 3opx;
+text-align: center;
+padding-inline: 10px;
+}
+.hbut{
+    width:150px;
+    height:50px;
+    font-size: 20px;
+    font-family: lato;
+    background-color: white;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    
+}
+.fontline1{
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    margin-top: 60px;
+    height: 80px;
+    gap:5px;
+
+}
+
+.fontline1 h1{
+   
+    font-size: 40px;
+}
+/* ==========================logoslide============= */
+.logoslide{
+    width:100%;
+    height: 200px;
+    display: flex;
+   justify-content: space-evenly;
+    align-items: center;
+
+}
+.logoslide article div img{
+    width: 100px;
+    animation:  logoslide 3s ease-in-out infinite;
+}
+/* @keyframes logoslide{
+    0%{
+         
+    }
+} */
+
+
+/* ===============bottom =============================*/
+
+.bottom{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    
+}
+.bottom article div img{
+    width:100%;
+    height:500px;
+}
+/* ================bottom2=============================== */
+.bottom{
+    width: 100%;
+    height: 600px;
+}
+.bottom2 article{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+#img1{
+    width: 400px;
+    height: 500px;
+}
+#img2{
+    width:300px;
+    margin-bottom: 100px;
+    margin-right: 100px;
+
+}
+#text{
+    margin-top: 200px;
+}
+#but:hover{
+    color: red;
+    /* background-color: white; */
+}
+#but{
+    padding: 10px;
+    color: white;
+    background-color: black;
+
+}
+.footer-content {
+    width: 100%;
+    height: 400px;
+    font-family: sans-serif;
+     display: flex; 
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    padding-top: 80px;
+    gap: 100px;
+    line-height: 40px;
+    font-size: 15px; 
+    background-color: aliceblue;
+    text-decoration-color: white;
+  }
+  
+  .head {
+    display: flex;
+    flex-direction: column;
+  }
+  .head1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .head1 p{
+    font-size: 8px;
+  }
+ 
+  .head2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .head3 {
+    display: flex;
+    flex-direction: column;
+  }
+  /* ================whatapps=========== */
+  #whatapps{
+    background-color:rgb(41, 189, 41);
+    color: white;
+    border-radius:50px ; 
+     padding:0px;
+    font-size: 40px;
+    position: fixed;
+    right: 100px;
+    bottom: 100px;
+  }
+  #footer1{
+    width: 100%;
+    height: 60px;
+    align-items: center;
+    background-color: red;
+  }
+   #footer1 article{
+    display: inline-flex;
+    align-items: center;
+
+   }
+  
+  #footer1 article div{
+   text-align: center;
+    font-size: 13px;
+    padding: 8px;
+  }
+  #foot{
+  justify-content: center;
+  text-align: center;
+    margin-left: 400px;
+  }
+@media only screen and (max-width:450px){
+    #navbar{
+        width: 95%;
+        height: 90px;
+        display: flex;
+        justify-content: space-evenly;
+        /* background-color: aqua; */
+        align-items: center;
+        /* position: absolute;  */
+         /* position: fixed; */
+         /* margin-right:10px; */
+         position: fixed ;
+         background-color: rgb(214, 73, 73);
+        overflow: hidden;
+        
+    
+    }
+    #navbar img{
+        width:80px;
+    
+        /* margin-left: 5px; */
+    
+    }
+    #navbar nav ul {
+        display: none;
+        list-style: none;
+        gap: 10px;
+    
+    }
+    
+    #navbar nav ul li a{
+        text-decoration: none;
+        
+    
+    }
+    #navbar nav ul li a{
+        color: black;
+    }
+    #navbar nav ul li a:hover{
+        color: rgb(233, 4, 4);
+    }
+    #nav{
+        display: flex;
+        gap: 20px;
+        margin-right: 5px;
+    }
+    #nav li{
+        display: flex;
+        list-style: none;
+        gap: 20px;
+      
+    }
+    
+    #nav ul li a{
+        text-decoration: none;
+        color: black;
+    }
+    .imgslider{
+        width: 100%;
+        height: 100vh;
+        display: block;
+        background-image: url(https://www.perfumelounge.in/cdn/shop/files/webbanner1_a71fe45b-f049-4c25-984f-eab56a45acd0.jpg?v=1727775905&width=1800);
+        background-size: cover;
+        animation: changeimage 10s linear infinite;
+    }
+    @keyframes changeimage{
+        0%{
+            background-image: url(https://www.perfumelounge.in/cdn/shop/files/The_Glamour_Collection_1.jpg?v=1730707829&width=1800);
+        }
+        25%{
+            background-image: url(https://www.perfumelounge.in/cdn/shop/files/webbanner1_a71fe45b-f049-4c25-984f-eab56a45acd0.jpg?v=1727775905&width=1800);
+        }
+        50%{
+            background-image: url(https://www.perfumelounge.in/cdn/shop/files/webbanner1_a71fe45b-f049-4c25-984f-eab56a45acd0.jpg?v=1727775905&width=1800);
+        }
+        75%{
+            background-image: url(https://www.perfumelounge.in/cdn/shop/files/Website_Banner_8.jpg?v=1726821941&width=1800);
+        }
+        100%{
+            background-image: url(https://www.perfumelounge.in/cdn/shop/files/webbanner1_a71fe45b-f049-4c25-984f-eab56a45acd0.jpg?v=1727775905&width=1800);
+        }
+        
+    
+    }
+    #whatapps{
+        background-color:rgb(41, 189, 41);
+        color: white;
+        border-radius:50px ; 
+         padding:0px;
+        font-size: 40px;
+        position: fixed;
+        right: 60px;
+        bottom: 70px;
+      }
+    .hero{
+        /* width: 100%; */
+    
+        display:grid ;
+        grid-template-columns: auto ;
+        justify-content: space-between;
+        align-items:center ;
+        overflow: hidden;
+    }
+    .hero article div img{
+        margin: 40px;
+        padding: 10px;
+    }
+    .hero article div img{
+         width: 250px;
+        height:300px
+    
+    }
+    .hero article div img:hover{
+        scale: 1.2;
+        transition: 0.2s;
+        background-image: url(https://www.perfumelounge.in/cdn/shop/files/2_11_1_1.jpg?v=1725266665&width=700);
+    } 
+    .hero article div{   
+    font-size: 3opx;
+    text-align: center;
+    padding-inline: 10px;
+    }
+    .logoslide{
+        width:100%;
+        height: auto;
+        display: block;
+       justify-content: center;
+       align-items: center;
+       margin-left: 40px;
+        
+    
+    }.hero1{
+        /* width: 100%; */
+        overflow: hidden;
+        display:grid ;
+        grid-template-columns: auto ;
+        justify-content: center;
+        align-items:center ;
+    }
+    .hero1 article div img{
+        margin: 20px;
+        padding: 10px;
+    }
+    .hero1 article div img{
+         width: 400px;
+        height:500px;
+        transition: 10s;
+    }
+    .hero1 article div img:hover{
+        scale: 1.2;
+       
+    }
+    .hero1 article div{   
+    font-size: 3opx;
+    text-align: center;
+    padding-inline: 10px;
+    }
+    .hbut{
+        width:150px;
+        height:50px;
+        font-size: 20px;
+        font-family: lato;
+        background-color: white;
+        color: black;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .bottom{
+        width: 100%;
+        height: auto;
+        display: grid;
+        overflow: hidden;
+        
+    }
+    .bottom article div img{
+        width:100%;
+        height:auto;
+    }
+    /* ================bottom2=============================== */
+    .bottom{
+        width: 100%;
+        height: auto;
+    }
+    .bottom2 article{
+        display: block;
+        justify-content: center;
+    
+    }
+    #img1{
+        width: 400px;
+        height: 500px;
+    }
+    #img2{
+        width:300px;
+        margin-bottom: 100px;
+       margin-right: 50px;
+    
+    }
+    #text{
+        margin: 10px 50px;
+    }
+    #but:hover{
+        color: red;
+        /* background-color: white; */
+    }
+    #but{
+        padding: 10px;
+        color: white;
+        background-color: black;
+    
+    }
+    .footer-content {
+        width: 100%;
+        height: auto;
+        font-family: sans-serif;
+         display: block; 
+        flex-direction: row;
+        text-align: center;
+        justify-content: center;
+        padding-top: 80px;
+        gap: 100px;
+        line-height: 40px;
+        font-size: 15px; 
+        background-color: aliceblue;
+        text-decoration-color: white;
+      }
+      
+      .head {
+        display: flex;
+        flex-direction: column;
+      }
+      .head1 {
+        display: flex;
+        flex-direction: column;
+      }
+      .head1 p{
+        font-size: 8px;
+      }
+     
+      .head2 {
+        display: flex;
+        flex-direction: column;
+      }
+      .head3 {
+        display: flex;
+        flex-direction: column;
+      }
+    #footer1{
+        width: 100%;
+        height: auto;
+        display: block;
+        align-items: center;
+        background-color: red;
+      }
+       #footer1 article{
+        display: block;
+        align-items: center;
+    
+       }
+      
+      #footer1 article div{
+       text-align: center;
+        font-size: 13px;
+        padding: 8px;
+      }
+      #foot{
+      justify-content: center;
+      text-align: center;
+        margin-left: 40px;
+      }
+}
+  
